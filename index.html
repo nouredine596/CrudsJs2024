@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cruds 2024</title>
+</head>
+<body>
+    
+    <div id="head">
+        <p>product management system</p>
+    </div>
+
+
+
+    <div id="input">
+
+        <input type="text" placeholder="title" id="title">
+        <div class="price">
+            <input type="number" placeholder="price" id="price" onkeyup="Totalee ()">
+            <input type="number" placeholder="ads" id="ads" onkeyup="Totalee ()">
+            <input type="number" placeholder="taxes" id="taxes" onkeyup="Totalee ()">
+            <input type="number" placeholder="discount" id="discount"onkeyup="Totalee ()" >
+            <small id="totale"></small>
+        </div>
+        <input type="number" placeholder="counts" id="count" >
+        <input type="text" placeholder="category" id="category">
+        <button id="creer">Create</button>
+        
+    </div>
+
+
+    <div id="output">
+        <input type="text" placeholder="search" id="search" onkeyup="SearchData (this.value)">
+        <div id="btn">
+            <button id="searchByTitle" onclick="SearchMode(this.id)">Search By Title</button>
+            <button id="searchByCategory" onclick="SearchMode(this.id)">Search By Category</button>
+        </div>
+        <div id="deleteAll"></div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>ads</th>
+                <th>taxes</th>
+                <th>discount</th>
+                <th>totale</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
